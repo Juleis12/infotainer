@@ -11,16 +11,16 @@
     "deploy": "gh-pages -d dist --branch pages --cname infotainer.tchh.in"
   },
   "dependencies": {
-    "vue": "^3.5.42"
+    "vue": "latest"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.3.3",
-    "@vitejs/plugin-vue": "^6.0.8",
-    "eslint": "^10.9.1",
-    "eslint-plugin-vue": "^10.5.0",
-    "gh-pages": "^6.3.0",
-    "vite": "^8.2.2",
-    "tailwindcss": "^4.3.3"
+    "@tailwindcss/vite": "latest",
+    "@vitejs/plugin-vue": "latest",
+    "eslint": "latest",
+    "eslint-plugin-vue": "latest",
+    "gh-pages": "latest",
+    "tailwindcss": "latest",
+    "vite": "latest"
   },
   "engines": {
     "node": ">=20.19.0"
