@@ -32,6 +32,8 @@ jobs:
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Publish pages branch
-        run: npx gh-pages -d dist --branch pages
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npx gh-pages -d dist --branch pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
