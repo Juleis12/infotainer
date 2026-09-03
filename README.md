@@ -1,24 +1,34 @@
-# my-vue-tailwind-app
+# Infotainer
 
-## Project setup
-```
+A Vue-powered directory of informative YouTube channels.
+
+## Development
+
+```bash
 npm install
+npm run dev
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Production build
 
-### Compiles and minifies for production
-```
+```bash
 npm run build
+npm run preview
 ```
 
-### Lints and fixes files
-```
+## Lint
+
+```bash
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Deploy
+
+The production build can be published to the `pages` branch with:
+
+```bash
+npm run build
+npm run deploy
+```
+
+The deployment script publishes `dist` to the `pages` branch and configures the `infotainer.tchh.in` CNAME.
