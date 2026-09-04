@@ -8,14 +8,12 @@
           <h2 class="text-base font-black leading-6 text-[#28191b] dark:text-white">
             <a :href="channelUrl" target="_blank" rel="noopener noreferrer" class="transition hover:text-[#a82135] dark:hover:text-[#ef777d]">{{ name }}</a>
           </h2>
-          <a :href="channelUrl" target="_blank" rel="noopener noreferrer" class="mt-1 inline-block text-xs font-bold text-[#a82135] dark:text-[#ef777d]">YouTube channel ↗</a>
         </div>
       </div>
       <div class="mt-5 flex flex-wrap gap-1.5">
         <span v-for="tag in tags" :key="tag" class="rounded-full bg-[#f3e7e2] px-2.5 py-1 text-[11px] font-bold text-[#69484c] dark:bg-[#321b22] dark:text-[#dcbfc4]">{{ tag }}</span>
       </div>
       <p class="mt-4 flex-1 whitespace-pre-line text-sm leading-6 text-[#76635f] dark:text-[#bda8ad]">{{ truncatedDescription }}<button v-if="isTruncated" type="button" class="ml-1 font-black text-[#a82135] hover:underline dark:text-[#ef777d]" @click="toggleDescription">{{ showFullDescription ? "Less" : "More" }}</button></p>
-      <a :href="channelUrl" target="_blank" rel="noopener noreferrer" class="mt-5 inline-flex items-center justify-center rounded-lg bg-[#b51f39] px-4 py-2.5 text-sm font-black text-white shadow-md shadow-[#6f1426]/15 transition hover:bg-[#c72d48] focus:outline-none focus:ring-2 focus:ring-[#e35d6c] focus:ring-offset-2 dark:focus:ring-offset-[#211216]">Visit Channel <span class="ml-2">↗</span></a>
     </div>
   </article>
 </template>
