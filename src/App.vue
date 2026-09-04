@@ -51,9 +51,6 @@
           <span aria-hidden="true">⌕</span>
           <input v-model="searchQuery" class="min-w-0 flex-1 bg-transparent outline-none placeholder:text-[#a18b87]" placeholder="Search channels..." aria-label="Search channels" />
         </label>
-        <button type="button" class="self-start rounded-xl border border-[#dfc9c2] bg-[#f8eee9] px-4 py-2 text-sm font-bold text-[#61343a] transition hover:border-[#b92d42] hover:text-[#a82135] dark:border-[#4a2c32] dark:bg-[#2a171c] dark:text-[#ead8d8] dark:hover:border-[#c24a5a]" @click="toggleDarkMode">
-          {{ isDarkMode ? "☀ Light mode" : "☾ Dark mode" }}
-        </button>
       </section>
 
       <TagFilter :channels="channels" :selectedTags="selectedTags" @filter="applyFilter" />
