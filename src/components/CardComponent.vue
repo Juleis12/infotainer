@@ -1,19 +1,21 @@
 <template>
-  <article class="group flex h-full flex-col overflow-hidden rounded-[1.25rem] border border-[#eadbd2] bg-[#fffdfb] shadow-[0_8px_24px_rgba(74,16,27,0.07)] transition duration-300 hover:-translate-y-1 hover:border-[#c87980] hover:shadow-[0_18px_40px_rgba(126,24,45,0.14)] dark:border-[#43262c] dark:bg-[#211216] dark:hover:border-[#82404b]">
-    <div class="h-2 bg-gradient-to-r from-[#5d1020] via-[#b51f39] to-[#df5968]"></div>
+  <article class="group flex h-full flex-col overflow-hidden rounded-sm border border-[#c8cdd0] bg-[#f4f5f5] shadow-[3px_5px_0_#c7cdd1] transition duration-300 hover:-translate-y-1 hover:shadow-[5px_8px_0_#b8c0c5] dark:border-[#5b6268] dark:bg-[#3b4145] dark:shadow-[3px_5px_0_#252a2e]">
+    <div class="h-1.5 bg-[#586a77]"></div>
     <div class="flex flex-1 flex-col p-5">
       <div class="flex items-start gap-4">
-        <img :src="logo" :alt="`${name} logo`" class="h-16 w-16 shrink-0 rounded-2xl border border-[#eaded8] bg-[#f5eee9] object-cover shadow-sm transition duration-300 group-hover:scale-105 dark:border-[#4a3438] dark:bg-[#2a191e]" />
+        <img :src="logo" :alt="`${name} logo`" class="h-16 w-16 shrink-0 rounded-full border-2 border-[#aeb8be] bg-[#eef0f1] object-cover shadow-sm dark:border-[#727d84] dark:bg-[#30363a]" />
         <div class="min-w-0 flex-1">
-          <h2 class="text-base font-black leading-6 text-[#28191b] dark:text-white">
-            <a :href="channelUrl" target="_blank" rel="noopener noreferrer" class="transition hover:text-[#a82135] dark:hover:text-[#ef777d]">{{ name }}</a>
+          <h2 class="text-lg font-black leading-6 text-[#29323a] dark:text-[#eef1f3]">
+            <a :href="channelUrl" target="_blank" rel="noopener noreferrer" class="underline decoration-[#91a1ac] decoration-1 underline-offset-4 transition hover:text-[#465b69] dark:hover:text-[#b8c7d0]">{{ name }}</a>
           </h2>
         </div>
       </div>
       <div class="mt-5 flex flex-wrap gap-1.5">
-        <span v-for="tag in tags" :key="tag" class="rounded-full bg-[#f3e7e2] px-2.5 py-1 text-[11px] font-bold text-[#69484c] dark:bg-[#321b22] dark:text-[#dcbfc4]">{{ tag }}</span>
+        <span v-for="tag in tags" :key="tag" class="rounded-full border border-[#c5ccd0] bg-[#e9ecee] px-2.5 py-1 text-[11px] font-bold text-[#52606a] dark:border-[#59636a] dark:bg-[#343b40] dark:text-[#d2d9dd]">{{ tag }}</span>
       </div>
-      <p class="mt-4 flex-1 whitespace-pre-line text-sm leading-6 text-[#76635f] dark:text-[#bda8ad]">{{ truncatedDescription }}<button v-if="isTruncated" type="button" class="ml-1 font-black text-[#a82135] hover:underline dark:text-[#ef777d]" @click="toggleDescription">{{ showFullDescription ? "Less" : "More" }}</button></p>
+      <p class="mt-4 flex-1 whitespace-pre-line text-sm leading-6 text-[#5b666e] dark:text-[#c2cbd0]">
+        {{ truncatedDescription }}<button v-if="isTruncated" type="button" class="ml-1 font-black text-[#465b69] underline decoration-dotted underline-offset-2 hover:text-[#293943] dark:text-[#b8c7d0] dark:hover:text-white" @click="toggleDescription">{{ showFullDescription ? "Less" : "More" }}</button>
+      </p>
     </div>
   </article>
 </template>
