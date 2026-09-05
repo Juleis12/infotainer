@@ -5,8 +5,8 @@
       <div class="flex items-start gap-4">
         <img :src="logo" :alt="`${name} logo`" class="h-16 w-16 shrink-0 rounded-full border-2 border-[#aeb8be] bg-[#eef0f1] object-cover shadow-sm dark:border-[#727d84] dark:bg-[#30363a]" />
         <div class="min-w-0 flex-1">
-          <h2 class="text-lg font-black leading-6 text-[#29323a] dark:text-[#eef1f3]">
-            <a :href="channelUrl" target="_blank" rel="noopener noreferrer" class="text-[#2f6690] underline decoration-[#7098b5] decoration-1 underline-offset-4 transition hover:text-[#1f4f73] dark:text-[#8db9d5] dark:hover:text-[#b8d5e6]">{{ name }}</a>
+          <h2 class="text-lg font-black leading-6 text-[#1769e0] dark:text-[#67a3ff]">
+            <a :href="channelUrl" target="_blank" rel="noopener noreferrer" class="text-[#1769e0] underline decoration-[#4f8fe8] decoration-1 underline-offset-4 transition hover:text-[#0d55bd] dark:text-[#67a3ff] dark:hover:text-[#9bc2ff]">{{ name }}</a>
           </h2>
         </div>
       </div>
