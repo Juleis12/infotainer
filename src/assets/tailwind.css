@@ -8,17 +8,26 @@ html {
 
 body {
   margin: 0;
-  background: #f7f3ef;
-  color: #241b1b;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #30363d;
+  font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive;
+  background-color: #e8ebed;
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 31px, rgba(96, 118, 135, 0.12) 32px), linear-gradient(to right, rgba(170, 70, 70, 0.12) 0, rgba(170, 70, 70, 0.12) 2px, transparent 2px, transparent 100%);
+  background-size: 100% 32px, 100% 100%;
 }
 
 .dark body {
-  background: #160f10;
-  color: #f8efea;
+  color: #e3e7ea;
+  background-color: #30353a;
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 31px, rgba(190, 202, 212, 0.08) 32px), linear-gradient(to right, rgba(185, 105, 105, 0.16) 0, rgba(185, 105, 105, 0.16) 2px, transparent 2px, transparent 100%);
+}
+
+button,
+input,
+a {
+  font-family: inherit;
 }
 
 ::selection {
-  background: #f0c4be;
-  color: #5d1e23;
+  background: #b9c8d3;
+  color: #1f2930;
 }
