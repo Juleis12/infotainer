@@ -3,7 +3,7 @@
     <nav class="sticky top-0 z-30 border-b border-[#aeb8be] bg-[#e8ebed]/95 text-[#303a42] shadow-[0_3px_0_rgba(70,84,94,0.12)] backdrop-blur dark:border-[#59636a] dark:bg-[#30353a]/95 dark:text-[#e4e8eb]">
       <div class="mx-auto flex max-w-7xl items-center gap-6 px-4 py-3 sm:px-6 lg:px-8">
         <a href="#top" class="flex items-center gap-3 text-lg font-black tracking-tight text-[#1769e0] dark:text-[#67a3ff]">
-          <span class="grid h-9 w-9 place-items-center rounded-lg bg-[#1769e0] text-sm text-white shadow-[2px_3px_0_#8fb7e8]">▶</span>
+          <span class="grid h-9 w-9 place-items-center rounded-lg bg-[#ff0000] text-sm text-white shadow-[2px_3px_0_#8fb7e8]">▶</span>
           <span class="underline decoration-[#4f8fe8] decoration-2 underline-offset-4">Infotainer</span>
         </a>
         <div class="hidden items-center gap-6 text-sm font-semibold text-[#59656e] sm:flex dark:text-[#c7d0d5]">
