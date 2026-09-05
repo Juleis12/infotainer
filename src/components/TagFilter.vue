@@ -5,7 +5,7 @@
       :key="tag"
       type="button"
       @click="filterByTag(tag)"
-      :class="selectedTags.includes(tag) ? 'border-[#c62835] bg-[#c62835] text-white shadow-md shadow-[#b8323a]/20' : 'border-[#e2d4ce] bg-[#fffdfb] text-[#624d49] hover:border-[#d66a64] hover:bg-[#fff6f3] hover:text-[#a52d36] dark:border-[#453031] dark:bg-[#211718] dark:text-[#d9c5c0] dark:hover:border-[#9e3c43] dark:hover:bg-[#2b1b1c] dark:hover:text-[#ef766d]'"
+      :class="selectedTags.includes(tag) ? 'border-[#46545e] bg-[#46545e] text-white shadow-[2px_3px_0_#aeb8be]' : 'border-[#c2c9cd] bg-[#f5f6f6]/90 text-[#52606a] hover:border-[#8296a4] hover:bg-white hover:text-[#34434e] dark:border-[#59636a] dark:bg-[#3b4247] dark:text-[#d3d9dd] dark:hover:border-[#8295a1] dark:hover:bg-[#444b50] dark:hover:text-white]'"
       class="rounded-full border px-4 py-2 text-xs font-bold capitalize transition"
     >
       {{ tag }}
